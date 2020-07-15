@@ -15,3 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/wx/gettoken','TestController@getToken');
+Route::get('/wx/curl','TestController@getCurltoken');
+Route::get('/wx/guzzle','TestController@getGuzzleToken');
+Route::get('access','TestController@getapitoken');
+Route::get('userinfo','TestController@userInfo');
